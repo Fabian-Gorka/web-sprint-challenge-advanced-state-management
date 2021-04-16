@@ -13,9 +13,10 @@ class App extends Component {
     fetchSmurfs()
     return (
       <div className="App">
-        <Header />
+        <Header /> 
+        
         <main>
-          <SmurfList/>
+         <SmurfList/>
           <AddForm/>
         </main>
       </div>

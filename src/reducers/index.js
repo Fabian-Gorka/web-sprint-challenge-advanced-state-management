@@ -18,7 +18,7 @@ const reducer = (state= initialState, action)=>{
             return {
                 ...state,
                 isLoading: false,
-                initialState: action.payload,
+                smurfs: action.payload,
                 error: ''
             }
         case FETCH_ERR:
@@ -30,7 +30,7 @@ const reducer = (state= initialState, action)=>{
         case(SMURF_ADD):
             return({
                 ...state,
-                smurfs:[...state.smurfs,action.payload],
+                smurfs: [...state.smurfs,action.payload],
                 isLoading:true
             })  
         case(SET_ERR):

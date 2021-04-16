@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { connect } from "react-redux";
 import {setError, addSmurf} from './../actions/index.js'
 
+
 const AddForm = (props) => {
 
     const [state, setState] = useState({
